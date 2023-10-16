@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Pilcrow marca;
+    src: url(PilcrowRounded-Bold.otf);
+}
+@font-face {
+    font-family: GeneralSans titulo;
+    src: url(GeneralSans-Semibold.otf);
+}
+@font-face {
+    font-family: GeneralSans cuerpo;
+    src: url(GeneralSans-Medium.otf);
+}
+
+@font-face {
+    font-family: GeneralSans peque;
+    src: url(GeneralSans-Light.otf);
+}
+
+a {
+    font-family: Pilcrow marca;
+}
+
+h1 {
+    font-family: GeneralSans titulo;
+    text-align-last: center;
+}
+
+h3 {
+    font-family: GeneralSans cuerpo;
+    text-align-last: center;
+}
+
+h5 {
+font-family: GeneralSans cuerpo;
+}
+
+p {
+    font-family: GeneralSans peque;
+}
+
+body {
+    background-color: gainsboro;
+}
