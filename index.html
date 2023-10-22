@@ -6,6 +6,9 @@
   <title>Lo quiero, lo imprimo</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="carrito.js" defer></script> 
+  <script src="lista.js" defer></script>
 </head>
 <body>
   <!-- Barra de navegación -->
@@ -48,8 +51,97 @@
     </div>
   </div>
 
+  <!--Ensayo carrito-->
+<input type="checkbox" name="" id="check">  
+<div class="container catalogo" id="Catalogo-productos">
+  <label for="check"><span class="fas fa-times" id="times"></span><span class="fas fa-bars" id="bars"></span></label>
+  <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
+    <div class="col">
+      <div class="card">
+        <img src="PRODUCTO-1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Caldero</h5>
+          <p class="card-text">Perfecto para preparar cualquier pócima o convertirlo en matero.</p>
+          <h5 class="card-text">$10.000</h5>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="PRODUCTO-2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Skull</h5>
+          <p class="card-text">Ni sabíamos que estamos huecos por dentro, lo acabamos de descubrir.</p>
+          <h5 class="card-text">$15.000</h5>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="PRODUCTO-3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bloque ?</h5>
+          <p class="card-text">Mejor recolectar las monedas con mucho estilo, que no tener ni una.</p>
+          <h5 class="card-text">$20.000</h5>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below</p>
+          <h5 class="card-text">$25.000</h5>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="carrito-compras">
+  <div class="carrito-compras-titulo">
+    <a>Carrito compras</a>
+  </div>
+  <div class="carrito-compras-items"> </div>
+  <ul class="list-group list-group-flush" id="carrito-compras-lista">
+    <li class="list-group-item d-flex flex-row align-self-center justify-content-evenly text-indent: 2em">
+      <h5>Caldero</h5>
+      <p><i>$10.000</i></p>
+    </li>
+    <img src="PRODUCTO-1.png" alt="" class="imagen-producto">
+    <div class="alert alert-success" role="alert">
+      Producto agregado
+    </div>
+    <button type="button" class="btn btn-outline-danger">Eliminar</button>
+    <li class="list-group-item d-flex flex-row align-self-center justify-content-evenly text-indent: 2em">
+      <h5>Skull</h5>
+      <p><i>$15.000</i></p>
+    </li>
+    <img src="PRODUCTO-2.png" alt="" class="imagen-producto">
+    <div class="alert alert-success" role="alert">
+      Producto agregado
+    </div>
+    <button type="button" class="btn btn-outline-danger">Eliminar</button>
+    <li class="list-group-item d-flex flex-row align-self-center justify-content-evenly text-indent: 2em">
+      <h5>Bloque ?</h5>
+      <p><i>$20.000</i></p>
+    </li>
+    <img src="PRODUCTO-3.png" alt="" class="imagen-producto">
+    <div class="alert alert-success" role="alert">
+      Producto agregado
+    </div>
+    <button type="button" class="btn btn-outline-danger">Eliminar</button>
+  </ul>
+</div>
+  <!--Ensayo carrito--> 
+
     <!-- Productos -->
-  <div class="container mt-4">
+  <div class="container mt-4 text-center">
     <h3>Amamos los objetos ¿y vos?</h3>
     <div class="row">
       <!-- Tarjeta de producto 1 -->
@@ -114,5 +206,9 @@
           <p>&copy; 2023 Lo quiero, lo imprimo - Todos los derechos reservados</p>
         </div>
       </footer>
+
+      <!--Agregar react al proyecto-->
+      <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </body>
 </html>
